@@ -69,6 +69,22 @@ docker kill $ID
 docker rm $ID
 ```
 
+__Books :__
+```Python
+from app import app                                                                    
+from flask import send_file
+@app.route('/books')
+def download():
+    try:
+        path = "books.json"
+        return send_file(path, as_attachment=True)
+    except Exception as e:
+        return str(e)
+```
+ 
+
+<img src="https://github.com/ClementGib/PyDock/blob/master/Images/temp.PNG">
+
 __Arborescence du serveur :__
 <p></p>
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/Arbo">
