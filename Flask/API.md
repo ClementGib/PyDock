@@ -28,3 +28,40 @@ __Flask est un micro web Framework fait et pour Python__
 ```bash
 https://hub.docker.com/r/jcdemo/flaskapp
 ```
+
+__Flask Dockerfile__
+
+```bash
+FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
+RUN apk --update add bash nano
+ENV STATIC_URL /static
+ENV STATIC_PATH /var/www/app/static
+COPY ./requirements.txt /var/www/requirements.txt
+RUN pip install -r /var/www/requirements.txt
+```
+
+<p> Définition du répertoire flask TestApp et script d'installation :</p>
+
+__start.sh__
+```bash
+#!/bin/bash
+
+#creation du container
+app="docker.server"
+docker build -t ${app} .
+docker run -d -p 56733:80 \
+  --name=${app} \
+  -v $PWD:/app ${app
+```
+
+__remove.sh__
+```bash
+#!/bin/bash
+
+#détruit le container
+ID=$(docker ps -aqf "name=docker.server")
+docker kill $ID 
+docker rm $ID
+```
+
+__Arborescence du serveur :__
