@@ -40,36 +40,14 @@ COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
 ```
 
+__Mise en place du serveur__
+
 <p>Hello world:</p>
+
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/flask.png">
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/server.png">
 
-
-<p> Définition du répertoire flask TestApp et script d'installation :</p>
-
-__start.sh__
-```bash
-#!/bin/bash
-
-#creation du container
-app="docker.server"
-docker build -t ${app} .
-docker run -d -p 56733:80 \
-  --name=${app} \
-  -v $PWD:/app ${app
-```
-
-__remove.sh__
-```bash
-#!/bin/bash
-
-#détruit le container
-ID=$(docker ps -aqf "name=docker.server")
-docker kill $ID 
-docker rm $ID
-```
-
-__Books :__
+<p>Books.py :</p>
 ```Python
 from app import app                                                                    
 from flask import send_file
@@ -81,7 +59,6 @@ def download():
     except Exception as e:
         return str(e)
 ```
- 
 
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/temp.PNG">
 
@@ -90,8 +67,31 @@ __Arborescence du serveur :__
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/Arbo">
 
 
+__Automatisation__
 
-__test_api.sh__
+<p>start.sh :</p>
+```bash
+#!/bin/bash
+
+#creation du container
+app="docker.server"
+docker build -t ${app} .
+docker run -d -p 56733:80 \
+  --name=${app} \
+  -v $PWD:/app ${app
+```
+
+<p>remove.sh :</p>
+```bash
+#!/bin/bash
+
+#détruit le container
+ID=$(docker ps -aqf "name=docker.server")
+docker kill $ID 
+docker rm $ID
+```
+
+<p>test_api.sh :</p>
 ```bash
 #!/bin/bash
 COMMAND=$(docker ps |  grep docker.server)
