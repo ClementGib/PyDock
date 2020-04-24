@@ -1,4 +1,4 @@
-## API :
+### API :
 __Application Programmable Interface__
 
 
@@ -22,6 +22,7 @@ __Application Programmable Interface__
 
 <p> Une API est généralement un service temps réel prévu pour être exploité par d'autre logiciel </p>
 
+## FLASK
 
 __Flask est un micro web Framework fait et pour Python__
 
@@ -40,12 +41,28 @@ COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
 ```
 
-__Mise en place du serveur__
+# Mise en place du serveur
 
 <p>Hello world:</p>
 
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/flask.png">
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/server.png">
+
+
+__Fichiers__
+
+<p>main.py :</p>
+```Python
+from app import app
+```
+
+<p>__init__.py de app :</p>
+```Python
+from flask import Flask
+app = Flask(__name__)
+from app import views
+from app import books
+```
 
 <p>Books.py :</p>
 ```Python
@@ -67,8 +84,11 @@ __Arborescence du serveur :__
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/Arbo">
 
 
-__Automatisation__
 
+
+# automatisation__
+
+__scripts__
 <p>start.sh :</p>
 ```bash
 #!/bin/bash
