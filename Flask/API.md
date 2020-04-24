@@ -41,7 +41,7 @@ COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
 ```
 
-### Mise en place du serveur
+### Mise en place du serveur :
 
 <p>Hello world:</p>
 
@@ -86,7 +86,7 @@ __Arborescence du serveur :__
 
 
 
-### Automatisation__
+### Automatisation :
 
 __scripts__
 <p>start.sh :</p>
@@ -102,6 +102,7 @@ docker run -d -p 56733:80 \
 ```
 
 <p>remove.sh :</p>
+
 ```bash
 #!/bin/bash
 
@@ -112,6 +113,7 @@ docker rm $ID
 ```
 
 <p>test_api.sh :</p>
+
 ```bash
 #!/bin/bash
 COMMAND=$(docker ps |  grep docker.server)
@@ -132,5 +134,6 @@ fi
 sleep 2
 GET 192.168.1.18:56733 
 ```
+
 <p></p>
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/GET.PNG">
