@@ -89,10 +89,11 @@ __Arborescence du serveur :__
 ### Automatisation :
 
 __scripts__
+
 <p>start.sh :</p>
+
 ```bash
 #!/bin/bash
-
 #creation du container
 app="docker.server"
 docker build -t ${app} .
