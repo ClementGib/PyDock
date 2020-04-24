@@ -1,4 +1,4 @@
-### API :
+# API :
 __Application Programmable Interface__
 
 
@@ -41,7 +41,7 @@ COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
 ```
 
-# Mise en place du serveur
+### Mise en place du serveur
 
 <p>Hello world:</p>
 
@@ -86,7 +86,7 @@ __Arborescence du serveur :__
 
 
 
-# automatisation__
+### Automatisation__
 
 __scripts__
 <p>start.sh :</p>
