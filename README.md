@@ -4,7 +4,7 @@ _______________
 
 # Avancement 🔨
 
-<p>Les différentes étapes du TP sont repertorié dans les trois dossiers :</p>
+__Les différentes étapes du TP sont repertorié dans les trois dossiers :__
 
 * Exos : exercices Python
 * Docker : mise en place de docker et exploitation
