@@ -23,17 +23,8 @@ __Application Programmable Interface__
 <p> Une API est généralement un service temps réel prévu pour être exploité par d'autre logiciel </p>
 
 
-<p> Flask est un micro web Framework fait et pour Python </p>
+__Flask est un micro web Framework fait et pour Python__
 
-
-
-
-
-
-<p>  le container va s'éxecuter avec jupyter </p>
-<P> la commande suivante permet d'ajouter l'utilisateur courant au groupe Docker pour l'exploiter sans les droits administrateurs </p>
-
-```bash 
-sudo groupadd docker
-sudo gpasswd -a $USER docker
+```bash
+https://hub.docker.com/r/jcdemo/flaskapp
 ```

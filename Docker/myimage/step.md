@@ -1,5 +1,5 @@
 ## Etapes :
-__Apres avoir configure le Dockerfiles__
+__Après avoir configuré le Dockerfiles__
 
 <p> Dans le repertoir du Dockerfile: </p>
 
