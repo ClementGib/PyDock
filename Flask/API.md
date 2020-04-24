@@ -40,6 +40,11 @@ COPY ./requirements.txt /var/www/requirements.txt
 RUN pip install -r /var/www/requirements.txt
 ```
 
+<p>Hello world:</p>
+<img src="https://github.com/ClementGib/PyDock/blob/master/Images/flask.png">
+<img src="https://github.com/ClementGib/PyDock/blob/master/Images/server.png">
+
+
 <p> Définition du répertoire flask TestApp et script d'installation :</p>
 
 __start.sh__
@@ -65,4 +70,7 @@ docker rm $ID
 ```
 
 __Arborescence du serveur :__
+<p></p>
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/Arbo">
+
+
