@@ -2,6 +2,19 @@
 
 _______________
 
+# Avancement 🔨
+
+<p>Les différentes étapes du TP sont repertorié dans les trois dossiers :</p>
+* Exos : exercices Python
+* Docker : mise en place de docker et exploitation
+* Flask : utilisation d'une API et mise en place de flask
+
+__Définition des étapes dans les fichiers:__
+* API.md
+* dock.md
+
+_______________
+
 # Au programme 🤖
 
 * Lundi 20 avril :
