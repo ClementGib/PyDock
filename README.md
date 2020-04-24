@@ -11,8 +11,8 @@ __Les différentes étapes du TP sont repertorié dans les trois dossiers :__
 * Flask : utilisation d'une API et mise en place de flask
 
 __Définition des étapes dans les fichiers:__
-* API.md
-* dock.md
+* Flask/API.md
+* Docker/dock.md
 
 _______________
 
