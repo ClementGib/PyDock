@@ -52,11 +52,13 @@ RUN pip install -r /var/www/requirements.txt
 __Fichiers__
 
 <p>main.py :</p>
+
 ```Python
 from app import app
 ```
 
 <p>__init__.py de app :</p>
+
 ```Python
 from flask import Flask
 app = Flask(__name__)
@@ -65,6 +67,7 @@ from app import books
 ```
 
 <p>Books.py :</p>
+
 ```Python
 from app import app                                                                    
 from flask import send_file
