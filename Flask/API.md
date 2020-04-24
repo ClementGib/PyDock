@@ -49,15 +49,15 @@ RUN pip install -r /var/www/requirements.txt
 <img src="https://github.com/ClementGib/PyDock/blob/master/Images/server.png">
 
 
-__Fichiers__
+__Fichiers :__
 
-<p>main.py :</p>
+* main.py :
 
 ```Python
 from app import app
 ```
 
-<p>__init__.py de app :</p>
+* _init_.py de app :
 
 ```Python
 from flask import Flask
@@ -66,7 +66,7 @@ from app import views
 from app import books
 ```
 
-<p>Books.py :</p>
+* Books.py :
 
 ```Python
 from app import app                                                                    
@@ -91,9 +91,9 @@ __Arborescence du serveur :__
 
 ### Automatisation :
 
-__scripts__
+__scripts :__
 
-<p>start.sh :</p>
+* start.sh :
 
 ```bash
 #!/bin/bash
@@ -105,7 +105,7 @@ docker run -d -p 56733:80 \
   -v $PWD:/app ${app
 ```
 
-<p>remove.sh :</p>
+* remove.sh :
 
 ```bash
 #!/bin/bash
@@ -116,7 +116,7 @@ docker kill $ID
 docker rm $ID
 ```
 
-<p>test_api.sh :</p>
+* test_api.sh :
 
 ```bash
 #!/bin/bash
