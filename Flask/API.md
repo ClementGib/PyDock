@@ -113,4 +113,4 @@ sleep 2
 GET 192.168.1.18:56733 
 ```
 <p></p>
-<img src="https://github.com/ClementGib/PyDock/blob/master/Images/GET">
+<img src="https://github.com/ClementGib/PyDock/blob/master/Images/GET.PNG">
